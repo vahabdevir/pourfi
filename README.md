@@ -12,6 +12,10 @@
 
 **پورفای** یک سیستم جامع فروش فایل و پشتیبانی آنلاین است که با **لاراول** و **فیلامنت** توسعه یافته است. این سیستم با ارائه امکانات کامل مدیریت محتوا، فروش محصولات دیجیتال، پشتیبانی آنلاین و مدیریت کاربران، یک پلتفرم قدرتمند برای کسب‌وکارهای آنلاین فراهم می‌کند.
 
+## 🌐 وبسایت پروژه
+
+[https://pourfi.ir](https://pourfi.ir)
+
 ## 📸 تصاویر
 
 ![صفحه اصلی](http://pourfi.ir/assets/images/screenshot/1.jpg)
@@ -39,6 +43,7 @@
 - تنظیم خودکار فایل `.env`
 - ایمپورت خودکار دیتابیس
 - ایجاد APP_KEY به صورت تصادفی
+- بدون نیاز به دانش فنی برای نصب
 
 ### 💳 درگاه پرداخت
 - **اتصال به درگاه زرین‌پال** (Zarinpal)
@@ -88,51 +93,29 @@
 ## 📋 پیش‌نیازها
 
 - PHP 8.2 یا بالاتر
-- Composer
 - MySQL/MariaDB
-- Node.js & NPM (برای توسعه)
+- وب‌سرور (Apache/Nginx)
 
 ## 🚀 نصب و راه‌اندازی
 
-### روش اول - نصب خودکار (ساده)
+### نصب خودکار (روش توصیه شده)
 
 1. فایل‌های پروژه را روی هاست خود آپلود کنید
-2. فایل `installer.php` را در مرورگر باز کنید
+2. در مرورگر آدرس زیر را باز کنید:
+   `http://yourdomain.com/installer`
 3. اطلاعات دیتابیس و سایت را وارد کنید
 4. روی **شروع نصب** کلیک کنید
-5. پس از اتمام، پوشه `install` و `installer.php` را حذف کنید
+5. پس از اتمام، سیستم به‌طور خودکار راه‌اندازی می‌شود
+6. برای امنیت بیشتر، پوشه `install` و فایل `installer.php` را حذف کنید
 
-### روش دوم - نصب دستی
+### اطلاعات مورد نیاز در نصب‌کننده
 
-1. کلون کردن پروژه
-git clone https://github.com/your-username/pourfi.git
-
-2. نصب وابستگی‌ها
-composer install
-npm install
-
-3. کپی فایل محیط
-cp .env.example .env
-
-4. تنظیمات دیتابیس در فایل .env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=pourfi
-DB_USERNAME=root
-DB_PASSWORD=
-
-5. تولید کلید
-php artisan key:generate
-
-6. اجرای مایگریشن‌ها
-php artisan migrate
-
-7. تولید لینک ذخیره‌سازی
-php artisan storage:link
-
-8. اجرای سرور
-php artisan serve
+- **میزبان دیتابیس:** معمولاً localhost
+- **نام دیتابیس:** نام دیتابیس ایجاد شده
+- **نام کاربری دیتابیس:** نام کاربری دیتابیس
+- **رمز عبور دیتابیس:** رمز عبور دیتابیس
+- **ایمیل ادمین:** ایمیل مدیر اصلی سیستم
+- **آدرس سایت:** آدرس کامل سایت شما
 
 ## 🔐 اطلاعات ورود پیش‌فرض
 
@@ -145,6 +128,7 @@ php artisan serve
 
 ## 📁 ساختار پروژه
 
+```
 pourfi/
 ├── app/
 │   ├── Filament/          # پنل ادمین فیلامنت
@@ -155,13 +139,14 @@ pourfi/
 │   ├── migrations/        # مایگریشن‌ها
 │   └── seeders/           # دیتاهای اولیه
 ├── public/
-│   └── install/           # فایل‌های نصب
+│   └── installer.php      # فایل نصب‌کننده خودکار
 ├── resources/
 │   └── views/             # ویوهای کاربری
 ├── routes/
 │   ├── web.php            # روت‌های سایت
 │   └── filament/          # روت‌های ادمین
 └── .env                   # تنظیمات محیطی
+```
 
 ## 📊 ویژگی‌های پنل ادمین
 
@@ -208,8 +193,8 @@ pourfi/
 
 ## 📞 ارتباط با ما
 
-- **وبسایت:** [https://pourfi.dv](https://pourfi.dv)
-- **ایمیل:** [info@pourfi.dv](mailto:info@pourfi.dv)
+- **وبسایت:** [https://pourfi.ir](https://pourfi.ir)
+- **ایمیل:** [info@pourfi.ir](mailto:info@pourfi.ir)
 
 ---
 
@@ -229,6 +214,10 @@ pourfi/
 ## 📝 Introduction
 
 **PourFi** is a comprehensive file sales and online support system built with **Laravel** and **Filament**. It provides complete content management, digital product sales, online support, and user management capabilities, making it a powerful platform for online businesses.
+
+## 🌐 Project Website
+
+[https://pourfi.ir](https://pourfi.ir)
 
 ## 📸 Screenshots
 
@@ -257,6 +246,7 @@ pourfi/
 - Auto-configure `.env` file
 - Auto-import database
 - Random APP_KEY generation
+- No technical knowledge required for installation
 
 ### 💳 Payment Gateway
 - **Zarinpal** payment integration
@@ -306,51 +296,29 @@ pourfi/
 ## 📋 Requirements
 
 - PHP 8.2 or higher
-- Composer
 - MySQL/MariaDB
-- Node.js & NPM (for development)
+- Web server (Apache/Nginx)
 
 ## 🚀 Installation
 
-### Method 1 - Automatic Installation (Easy)
+### Automatic Installation (Recommended)
 
 1. Upload project files to your hosting
-2. Open `installer.php` in your browser
+2. Open the following URL in your browser:
+   `http://yourdomain.com/installer`
 3. Enter database and site information
 4. Click **Start Installation**
-5. After completion, delete the `install` folder and `installer.php`
+5. After completion, the system will be automatically set up
+6. For security, delete the `install` folder and `installer.php`
 
-### Method 2 - Manual Installation
+### Information Required in Installer
 
-1. Clone the project
-git clone https://github.com/your-username/pourfi.git
-
-2. Install dependencies
-composer install
-npm install
-
-3. Copy environment file
-cp .env.example .env
-
-4. Configure database in .env file
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=pourfi
-DB_USERNAME=root
-DB_PASSWORD=
-
-5. Generate application key
-php artisan key:generate
-
-6. Run migrations
-php artisan migrate
-
-7. Create storage link
-php artisan storage:link
-
-8. Start the server
-php artisan serve
+- **Database Host:** Usually localhost
+- **Database Name:** Your created database name
+- **Database Username:** Database username
+- **Database Password:** Database password
+- **Admin Email:** System administrator email
+- **Site URL:** Your full website address
 
 ## 🔐 Default Login Credentials
 
@@ -363,6 +331,7 @@ php artisan serve
 
 ## 📁 Project Structure
 
+```
 pourfi/
 ├── app/
 │   ├── Filament/          # Filament admin panel
@@ -373,13 +342,14 @@ pourfi/
 │   ├── migrations/        # Database migrations
 │   └── seeders/           # Initial data
 ├── public/
-│   └── install/           # Installation files
+│   └── installer.php      # Automatic installer file
 ├── resources/
 │   └── views/             # Frontend views
 ├── routes/
 │   ├── web.php            # Frontend routes
 │   └── filament/          # Admin routes
 └── .env                   # Environment settings
+```
 
 ## 📊 Admin Panel Features
 
@@ -426,8 +396,8 @@ For the full license text, please see the [LICENSE](LICENSE) file.
 
 ## 📞 Contact
 
-- **Website:** [https://pourfi.dv](https://pourfi.dv)
-- **Email:** [info@pourfi.dv](mailto:info@pourfi.dv)
+- **Website:** [https://pourfi.ir](https://pourfi.ir)
+- **Email:** [info@pourfi.ir](mailto:info@pourfi.ir)
 
 ---
 
