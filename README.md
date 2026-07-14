@@ -1,17 +1,36 @@
-# pourfi
 # README.md - فارسی
 
-```markdown
 # پورفای (PourFi) - سیستم فروش فایل و پشتیبانی
 
 ![PourFi](https://img.shields.io/badge/PourFi-v1.0-blue)
 ![Laravel](https://img.shields.io/badge/Laravel-11.x-red)
 ![Filament](https://img.shields.io/badge/Filament-3.x-green)
 ![PHP](https://img.shields.io/badge/PHP-8.2+-purple)
+![License](https://img.shields.io/badge/License-GPLv3-blue)
 
 ## 📝 معرفی
 
 **پورفای** یک سیستم جامع فروش فایل و پشتیبانی آنلاین است که با **لاراول** و **فیلامنت** توسعه یافته است. این سیستم با ارائه امکانات کامل مدیریت محتوا، فروش محصولات دیجیتال، پشتیبانی آنلاین و مدیریت کاربران، یک پلتفرم قدرتمند برای کسب‌وکارهای آنلاین فراهم می‌کند.
+
+## 📸 تصاویر
+
+![صفحه اصلی](http://pourfi.ir/assets/images/screenshot/1.jpg)
+
+![داشبورد مدیریت](http://pourfi.ir/assets/images/screenshot/2.jpg)
+
+![مدیریت محصولات](http://pourfi.ir/assets/images/screenshot/3.jpg)
+
+![مدیریت وبلاگ](http://pourfi.ir/assets/images/screenshot/4.jpg)
+
+![سیستم تیکتینگ](http://pourfi.ir/assets/images/screenshot/5.jpg)
+
+![مدیریت کاربران](http://pourfi.ir/assets/images/screenshot/6.jpg)
+
+![پنل کاربری](http://pourfi.ir/assets/images/screenshot/7.jpg)
+
+![مدیریت سفارشات](http://pourfi.ir/assets/images/screenshot/8.jpg)
+
+![دسته‌بندی محصولات](http://pourfi.ir/assets/images/screenshot/9.jpg)
 
 ## ✨ ویژگی‌های اصلی
 
@@ -85,18 +104,17 @@
 
 ### روش دوم - نصب دستی
 
-```bash
-# 1. کلون کردن پروژه
+1. کلون کردن پروژه
 git clone https://github.com/your-username/pourfi.git
 
-# 2. نصب وابستگی‌ها
+2. نصب وابستگی‌ها
 composer install
 npm install
 
-# 3. کپی فایل محیط
+3. کپی فایل محیط
 cp .env.example .env
 
-# 4. تنظیمات دیتابیس در فایل .env
+4. تنظیمات دیتابیس در فایل .env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -104,18 +122,17 @@ DB_DATABASE=pourfi
 DB_USERNAME=root
 DB_PASSWORD=
 
-# 5. تولید کلید
+5. تولید کلید
 php artisan key:generate
 
-# 6. اجرای مایگریشن‌ها
+6. اجرای مایگریشن‌ها
 php artisan migrate
 
-# 7. تولید لینک ذخیره‌سازی
+7. تولید لینک ذخیره‌سازی
 php artisan storage:link
 
-# 8. اجرای سرور
+8. اجرای سرور
 php artisan serve
-```
 
 ## 🔐 اطلاعات ورود پیش‌فرض
 
@@ -124,11 +141,10 @@ php artisan serve
 | **مدیر اصلی** | `admin@site.com` | `00000000` |
 | **مدیر فروش** | `sale@site.com` | `00000000` |
 
-> ⚠️ **توجه امنیتی:** پس از ورود، حتماً رمز عبور خود را تغییر دهید.
+⚠️ **توجه امنیتی:** پس از ورود، حتماً رمز عبور خود را تغییر دهید.
 
 ## 📁 ساختار پروژه
 
-```
 pourfi/
 ├── app/
 │   ├── Filament/          # پنل ادمین فیلامنت
@@ -146,7 +162,6 @@ pourfi/
 │   ├── web.php            # روت‌های سایت
 │   └── filament/          # روت‌های ادمین
 └── .env                   # تنظیمات محیطی
-```
 
 ## 📊 ویژگی‌های پنل ادمین
 
@@ -187,7 +202,9 @@ pourfi/
 
 ## 📄 لایسنس
 
-پروژه تحت لایسنس [MIT](LICENSE) منتشر شده است.
+پروژه تحت لایسنس **GNU General Public License v3.0** منتشر شده است.
+
+برای مشاهده متن کامل لایسنس، فایل [LICENSE](LICENSE) را مطالعه کنید.
 
 ## 📞 ارتباط با ما
 
@@ -197,21 +214,41 @@ pourfi/
 ---
 
 **پورفای** - راهکار هوشمند فروش فایل و پشتیبانی آنلاین 🚀
-```
+
 
 # README.md - English
 
-```markdown
 # PourFi - File Sales & Support System
 
 ![PourFi](https://img.shields.io/badge/PourFi-v1.0-blue)
 ![Laravel](https://img.shields.io/badge/Laravel-11.x-red)
 ![Filament](https://img.shields.io/badge/Filament-3.x-green)
 ![PHP](https://img.shields.io/badge/PHP-8.2+-purple)
+![License](https://img.shields.io/badge/License-GPLv3-blue)
 
 ## 📝 Introduction
 
 **PourFi** is a comprehensive file sales and online support system built with **Laravel** and **Filament**. It provides complete content management, digital product sales, online support, and user management capabilities, making it a powerful platform for online businesses.
+
+## 📸 Screenshots
+
+![Homepage](http://pourfi.ir/assets/images/screenshot/1.jpg)
+
+![Admin Dashboard](http://pourfi.ir/assets/images/screenshot/2.jpg)
+
+![Product Management](http://pourfi.ir/assets/images/screenshot/3.jpg)
+
+![Blog Management](http://pourfi.ir/assets/images/screenshot/4.jpg)
+
+![Ticket System](http://pourfi.ir/assets/images/screenshot/5.jpg)
+
+![User Management](http://pourfi.ir/assets/images/screenshot/6.jpg)
+
+![User Panel](http://pourfi.ir/assets/images/screenshot/7.jpg)
+
+![Order Management](http://pourfi.ir/assets/images/screenshot/8.jpg)
+
+![Product Categories](http://pourfi.ir/assets/images/screenshot/9.jpg)
 
 ## ✨ Key Features
 
@@ -285,18 +322,17 @@ pourfi/
 
 ### Method 2 - Manual Installation
 
-```bash
-# 1. Clone the project
+1. Clone the project
 git clone https://github.com/your-username/pourfi.git
 
-# 2. Install dependencies
+2. Install dependencies
 composer install
 npm install
 
-# 3. Copy environment file
+3. Copy environment file
 cp .env.example .env
 
-# 4. Configure database in .env file
+4. Configure database in .env file
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -304,18 +340,17 @@ DB_DATABASE=pourfi
 DB_USERNAME=root
 DB_PASSWORD=
 
-# 5. Generate application key
+5. Generate application key
 php artisan key:generate
 
-# 6. Run migrations
+6. Run migrations
 php artisan migrate
 
-# 7. Create storage link
+7. Create storage link
 php artisan storage:link
 
-# 8. Start the server
+8. Start the server
 php artisan serve
-```
 
 ## 🔐 Default Login Credentials
 
@@ -324,11 +359,10 @@ php artisan serve
 | **Super Admin** | `admin@site.com` | `00000000` |
 | **Sales Manager** | `sale@site.com` | `00000000` |
 
-> ⚠️ **Security Notice:** Change your password immediately after first login.
+⚠️ **Security Notice:** Change your password immediately after first login.
 
 ## 📁 Project Structure
 
-```
 pourfi/
 ├── app/
 │   ├── Filament/          # Filament admin panel
@@ -346,7 +380,6 @@ pourfi/
 │   ├── web.php            # Frontend routes
 │   └── filament/          # Admin routes
 └── .env                   # Environment settings
-```
 
 ## 📊 Admin Panel Features
 
@@ -387,7 +420,9 @@ pourfi/
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the **GNU General Public License v3.0**.
+
+For the full license text, please see the [LICENSE](LICENSE) file.
 
 ## 📞 Contact
 
@@ -397,4 +432,3 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 **PourFi** - Smart File Sales & Online Support Solution 🚀
-```
