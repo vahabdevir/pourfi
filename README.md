@@ -1,4 +1,4 @@
-# README.md - فارسی
+# فارسی
 
 # پورفای (PourFi) - سیستم فروش فایل و پشتیبانی
 
@@ -201,7 +201,7 @@ pourfi/
 **پورفای** - راهکار هوشمند فروش فایل و پشتیبانی آنلاین 🚀
 
 
-# README.md - English
+# English
 
 # PourFi - File Sales & Support System
 
